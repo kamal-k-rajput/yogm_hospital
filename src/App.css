@@ -1,0 +1,31 @@
+.App {
+  text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.display-flex-vertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.display-flex-horizontal {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.align-left {
+  align-items: flex-start;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}

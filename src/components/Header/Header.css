@@ -1,0 +1,21 @@
+.header-container {
+    background-color: blue;
+    top: 0;
+    height: 40px;
+    color: white;
+    padding: 0 30px;
+    /* display: flex;
+    align-items: center; */
+    justify-content: space-between;
+
+}
+
+.header-container>div:nth-child(2)>span {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.header-container>div:nth-child(2)>span>a {
+    color: white !important;
+    text-decoration: none;
+}
