@@ -9,6 +9,7 @@ import { Contact } from "./components/Homepage/Contact/Contact";
 import { Doctors } from "./components/Homepage/Doctors/Doctors";
 import { Facilities } from "./components/Homepage/Facilities/Facilities";
 import { Gallery } from "./components/Homepage/Gallery/Gallery";
+import { LogIn } from "./components/Admin/LogIn";
 function App() {
   return (
     <div className="App">
@@ -22,6 +23,7 @@ function App() {
           <Route path="/doctors" element={<Doctors />} />
           <Route path="/facilities" element={<Facilities />} />
           <Route path="/gallery" element={<Gallery />} />
+          <Route path="/admin" element={<LogIn />} />
         </Routes>
         <Footer />
       </BrowserRouter>
