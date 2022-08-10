@@ -1,7 +1,5 @@
-import React from 'react'
+import React from "react";
 
 export const Doctors = () => {
-  return (
-    <div>Doctors</div>
-  )
-}
+  return <div className="doctors-container"></div>;
+};

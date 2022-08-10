@@ -1,0 +1,17 @@
+.speciality-services-container>article>div>img {
+    width: 200px;
+    height: auto;
+
+}
+
+
+.speciality-services-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.speciality-services-container>article {
+    border: 1px solid grey;
+    margin: 5px;
+}

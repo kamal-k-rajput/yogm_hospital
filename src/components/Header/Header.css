@@ -3,9 +3,9 @@
     top: 0;
     height: 40px;
     color: white;
-    padding: 0 30px;
-    /* display: flex;
-    align-items: center; */
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
     justify-content: space-between;
 
 }
@@ -15,7 +15,12 @@
     cursor: pointer;
 }
 
+.header-container>div:nth-child(1) {
+    padding-left: 20px;
+}
+
 .header-container>div:nth-child(2)>span>a {
     color: white !important;
     text-decoration: none;
 }
+
