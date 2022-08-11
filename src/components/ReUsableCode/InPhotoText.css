@@ -1,4 +1,4 @@
-.contact-us {
+.in-photo-text-container {
     width: 100%;
     overflow: hidden;
     background-image: url("https://images.unsplash.com/photo-1599727277757-3f54e54ea618?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80");
@@ -9,18 +9,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
-.contact-us>div {
-
-    color: black;
+.in-photo-text-container>div {
+    display: inline-block;
     color: white;
     font-size: 28px;
     text-shadow: 1px 1px 0px #ff0000;
 
-}
-
-.connect-us {
-    justify-content: space-around;
 }

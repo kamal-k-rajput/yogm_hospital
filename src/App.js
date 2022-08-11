@@ -10,6 +10,8 @@ import { Doctors } from "./components/Homepage/Doctors/Doctors";
 import { Facilities } from "./components/Homepage/Facilities/Facilities";
 import { Gallery } from "./components/Homepage/Gallery/Gallery";
 import { LogIn } from "./components/Admin/LogIn";
+import { Management } from "./components/Homepage/Management/Management";
+import { Specialities } from "./components/Homepage/Specialities/Specialities";
 function App() {
   return (
     <div className="App">
@@ -24,6 +26,8 @@ function App() {
           <Route path="/facilities" element={<Facilities />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/admin" element={<LogIn />} />
+          <Route path="/management" element={<Management />} />
+          <Route path="specialities" element={<Specialities />} />
         </Routes>
         <Footer />
       </BrowserRouter>
