@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Footer.css";
-
+import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa";
 export const Footer = () => {
   return (
-    <footer className="footer-container display-flex-horizontal align-left ">
+    <footer className="footer-container align-left ">
       <div>
         <h3>Address</h3>
         <p>Achalda Road Bidhuna</p>
@@ -38,10 +38,27 @@ export const Footer = () => {
       <div>
         <h3>Follow Us</h3>
         <div className="display-flex-vertical align-left footer-links">
-          <a href="instagram">instagram</a>
-          <a href="linkedIn">Linked In</a>
-          <a href="twitter">Twitter</a>
-          <a href="facebook">Facebook</a>
+          <div className="footer-social-link">
+            <FaInstagram />
+            <a href="https://www.instagram.com/yogmhospital/">instagram</a>
+          </div>
+          <div className="footer-social-link">
+            <FaLinkedin />
+            <a
+              href="https://www.linkedin.com/in/yogm-hospital/"
+              target="_blank"
+            >
+              Linked In
+            </a>
+          </div>
+          <div className="footer-social-link">
+            <FaTwitter />
+            <a href="https://twitter.com/YogmHospital">Twitter</a>
+          </div>
+          <div className="footer-social-link">
+            <FaFacebook />
+            <a href="https://www.yogmgroup.com">Facebook</a>
+          </div>
         </div>
       </div>
       <div>
@@ -53,6 +70,7 @@ export const Footer = () => {
           allowfullscreen=""
           aria-hidden="false"
           tabindex="0"
+          title="map"
         >
           {/* {(26.795139, 79.50075)} */}
         </iframe>

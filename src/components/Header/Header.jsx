@@ -3,8 +3,8 @@ import "./Header.css";
 
 export const Header = () => {
   return (
-    <div className="header-container display-flex-horizontal">
-      <div>Yogm Hospital 24x7 open</div>
+    <div className="header-container">
+      <div className="hospital-open-time">Yogm Hospital 24x7 open</div>
 
       <div>
         <span>+919170597957</span>

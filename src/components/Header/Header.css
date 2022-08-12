@@ -4,10 +4,13 @@
     height: 40px;
     color: white;
     position: fixed;
-    width: 100%;
+    width: 100vw;
     overflow: hidden;
     justify-content: space-between;
-
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
 }
 
 .header-container>div:nth-child(2)>span {
@@ -24,3 +27,16 @@
     text-decoration: none;
 }
 
+@media screen and (max-width:680px) {
+    .header-container {
+        /* background-color: hotpink; */
+        font-size: 0.8rem;
+        flex-direction: column;
+        height: 50px;
+        justify-content: center;
+    }
+
+    .header-container>div:nth-child(1) {
+        padding-bottom: 10px;
+    }
+}

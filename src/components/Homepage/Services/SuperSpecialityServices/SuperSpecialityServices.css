@@ -15,3 +15,17 @@
     border: 1px solid grey;
     margin: 5px;
 }
+
+@media screen and (max-width:720px) {
+    .speciality-services-container {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+}
+
+@media screen and (max-width:480px) {
+    .speciality-services-container {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+}
