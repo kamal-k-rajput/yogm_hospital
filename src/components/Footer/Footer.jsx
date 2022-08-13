@@ -1,7 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Footer.css";
-import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaTwitter,
+  FaLinkedin,
+  FaGlobe,
+  FaPhoneAlt,
+} from "react-icons/fa";
+import { MdMailOutline } from "react-icons/md";
 export const Footer = () => {
   return (
     <footer className="footer-container align-left ">
@@ -9,8 +17,12 @@ export const Footer = () => {
         <h3>Address</h3>
         <p>Achalda Road Bidhuna</p>
         <p>Auraiya Uttar Pradesh 206243</p>
-        <p>9170597957, 9634946398</p>
         <p>
+          <FaPhoneAlt />
+          9170597957, 9634946398
+        </p>
+        <p>
+          <MdMailOutline />
           <a href="mailto: yogmhospital22@gmail.com">
             yogmhospital22@gmail.com
           </a>
@@ -69,6 +81,13 @@ export const Footer = () => {
         >
         </iframe>
       </div> */}
+      <div>
+        {" "}
+        <p style={{ color: "white" }}>
+          <FaGlobe />
+          <a href="https://kamalkishor.in">Contact developer</a>
+        </p>
+      </div>
     </footer>
   );
 };

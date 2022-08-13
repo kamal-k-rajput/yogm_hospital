@@ -1,4 +1,22 @@
-.services-container{
-
+.services-container {
     width: 100vw;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    border: 20px solid rgb(117, 140, 215);
+}
+
+@media screen and (max-width:400px) {
+
+    .services-container {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:720px) {
+
+    .services-container {
+        flex-wrap: wrap;
+    }
 }

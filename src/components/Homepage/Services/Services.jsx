@@ -24,7 +24,7 @@ export const Services = () => {
     },
   ];
   return (
-    <div className="services-container display-flex-horizontal">
+    <div className="services-container">
       {data.map((el) => {
         return <Service data={{ el }} key={uniqid()}></Service>;
       })}

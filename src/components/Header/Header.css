@@ -13,6 +13,14 @@
     font-size: 1.2rem;
 }
 
+.hospital-open-time {
+    color: white;
+}
+
+.hospital-open-time:focus {
+    color: white;
+}
+
 .header-container>div:nth-child(2)>span {
     margin: 0 10px;
     cursor: pointer;
@@ -30,7 +38,7 @@
 @media screen and (max-width:680px) {
     .header-container {
         /* background-color: hotpink; */
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         flex-direction: column;
         height: 50px;
         justify-content: center;
