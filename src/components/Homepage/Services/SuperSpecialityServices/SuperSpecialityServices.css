@@ -1,9 +1,10 @@
 .speciality-services-container>article>div>img {
     width: 200px;
-    height: auto;
+    /* height: 100%; */
+    /* overflow: hidden; */
+    border: 1px solid grey;
 
 }
-
 
 .speciality-services-container {
     display: grid;
@@ -16,10 +17,20 @@
     margin: 5px;
 }
 
+.speciality-service {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media screen and (max-width:720px) {
     .speciality-services-container {
         grid-template-columns: repeat(2, 1fr);
 
+    }
+
+    .speciality-service {
+        flex-direction: column;
     }
 }
 
@@ -27,5 +38,9 @@
     .speciality-services-container {
         grid-template-columns: repeat(1, 1fr);
 
+    }
+
+    .speciality-service {
+        flex-direction: column;
     }
 }
