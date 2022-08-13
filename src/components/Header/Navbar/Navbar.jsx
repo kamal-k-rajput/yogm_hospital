@@ -36,7 +36,9 @@ export const Navbar = () => {
           {/* <Link to="admin">Admin</Link> */}
         </nav>
       </div>
-      <div>{hiddenLink ? <NavLinks /> : ""}</div>
+      <div>
+        {hiddenLink ? <NavLinks props={{ hiddenLink, setHiddenLink }} /> : ""}
+      </div>
     </div>
   );
 };

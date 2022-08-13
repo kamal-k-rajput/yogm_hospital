@@ -1,6 +1,6 @@
 import React from "react";
 import "./SuperSpecialityServices.css";
-
+import uniqid from "uniqid";
 export const SuperSpecialityServices = () => {
   const data = [
     {
@@ -46,7 +46,7 @@ export const SuperSpecialityServices = () => {
       <div className="speciality-services-container">
         {data.map((el) => {
           return (
-            <article className="display-flex-horizontal ">
+            <article className="display-flex-horizontal " key={uniqid()}>
               <div className="speciality-icon">
                 <img src={el.img_link} alt="medical equipment" />
               </div>

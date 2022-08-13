@@ -1,6 +1,7 @@
 import React from "react";
 import { Service } from "./Service";
 import "./Services.css";
+import uniqid from "uniqid";
 export const Services = () => {
   const data = [
     {
@@ -25,7 +26,7 @@ export const Services = () => {
   return (
     <div className="services-container display-flex-horizontal">
       {data.map((el) => {
-        return <Service data={{ el }}></Service>;
+        return <Service data={{ el }} key={uniqid()}></Service>;
       })}
     </div>
   );
