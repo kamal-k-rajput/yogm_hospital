@@ -6,6 +6,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+<h2> This project is build for YOGM HOSPITAL and deployed on aws server.</h2>
+<p>This is a static website but later we have to create a appointment for patient and time slots with the help of node js.</p>
+
 ### `npm start`
 
 Runs the app in the development mode.\
