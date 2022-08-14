@@ -1,7 +1,7 @@
 import React from "react";
 import { InPhotoText } from "../../ReUsableCode/InPhotoText";
 import { PictureGallery } from "./PictureGallery";
-
+import "./PictureGallery.css";
 export const Gallery = () => {
   return (
     <div id="gallery">
@@ -12,6 +12,7 @@ export const Gallery = () => {
           heading: "GALLERY",
         }}
       />
+      <h2 className="gallery-centre-heading">YOGM HOSPITAL PICTURE GALLERY</h2>
       <PictureGallery />
     </div>
   );

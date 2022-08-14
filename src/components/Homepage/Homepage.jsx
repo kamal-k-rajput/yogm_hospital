@@ -8,7 +8,6 @@ export const Homepage = () => {
   return (
     <div>
       <ImageSlider />
-
       <Services />
       <SuperSpecialityServices />
     </div>
