@@ -15,7 +15,7 @@ export const Footer = () => {
     <footer className="footer-container align-left ">
       <div>
         <h3>Address</h3>
-        <p>Achalda Road Bidhuna</p>
+        <p>Achhalda Road Bidhuna</p>
         <p>Auraiya Uttar Pradesh 206243</p>
         <p>
           <FaPhoneAlt />
