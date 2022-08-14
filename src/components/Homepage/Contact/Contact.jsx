@@ -15,19 +15,19 @@ export const Contact = () => {
       <div className="connect-us display-flex-horizontal">
         <div>
           <h3>Connect With Us</h3>
-          <p>Achalda Road Bidhuna</p>
+          <p>Achhalda Road Bidhuna</p>
           <p>Auraiya Uttar Pradesh 206243</p>
           <p>9170597957, 9634946398</p>
         </div>
         <div>
           <h3>Connect With Us</h3>
-          <p>Achalda Road Bidhuna</p>
+          <p>Achhalda Road Bidhuna</p>
           <p>Auraiya Uttar Pradesh 206243</p>
           <p>9170597957, 9634946398</p>
         </div>
         <div>
           <h3>Connect With Us</h3>
-          <p>Achalda Road Bidhuna</p>
+          <p>Achhalda Road Bidhuna</p>
           <p>Auraiya Uttar Pradesh 206243</p>
           <p>9170597957, 9634946398</p>
         </div>
