@@ -10,6 +10,7 @@ import {
   FaPhoneAlt,
 } from "react-icons/fa";
 import { MdMailOutline } from "react-icons/md";
+import Map from "../Homepage/Contact/Map";
 export const Footer = () => {
   return (
     <footer className="footer-container align-left ">
@@ -33,7 +34,7 @@ export const Footer = () => {
         <h3 className="useful-links">Useful Links</h3>
         <div className="display-flex-vertical align-left footer-links">
           <Link to="contact">Contact</Link>
-          <Link to="Gallery">Gallery</Link>
+
           <Link to="privacypolicy">Privacy Policy</Link>
           <Link to="Refundpolicy">Refund Policy</Link>
           <Link to="termsAndConditions">Terms &amp; Conditions </Link>
@@ -45,6 +46,7 @@ export const Footer = () => {
           <Link to="Specialities">Specialities</Link>
           <Link to="doctors">Doctors</Link>
           <Link to="Facilities"> Facilities</Link>
+          <Link to="Gallery">Gallery</Link>
         </div>
       </div>
       <div>
@@ -64,32 +66,18 @@ export const Footer = () => {
           </div>
           <div className="footer-social-link">
             <FaFacebook />
-            <a href="https://www.yogmgroup.com">Facebook</a>
+            <a href="https://www.facebook.com/yogmhospital">Facebook</a>
           </div>
         </div>
       </div>
-      {/* <div>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15282225.79979123!2d73.7250245393691!3d20.750301298393563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1587818542745!5m2!1sen!2sin"
-          width="200"
-          frameborder="0"
-          style={{ border: 0 }}
-          allowfullscreen=""
-          aria-hidden="false"
-          tabindex="0"
-          title="map"
-        >
-        </iframe>
-      </div> */}
+
       <div>
-        {" "}
+        <Map props={{ height: "200px" }} />
         <p style={{ color: "white" }}>
           <FaGlobe />
-          <a href="https://kamalkishor.in">Contact developer</a>
+          <a href="https://www.kamalkishor.in">Contact developer</a>
         </p>
       </div>
     </footer>
   );
 };
-
-/* {(26.795139, 79.50075)} */

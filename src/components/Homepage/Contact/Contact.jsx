@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import GoToTop from "../../others/MoveToTop";
 import "./Contact.css";
+import Map from "./Map";
 export const Contact = () => {
   return (
     <div>
@@ -32,7 +34,10 @@ export const Contact = () => {
           <p>9170597957, 9634946398</p>
         </div>
       </div>
-      <div className="map">MAP DISPLAY HERE</div>
+      <div className="map">
+        <Map props={{ height: "350px" }} />
+      </div>
+      <GoToTop />
     </div>
   );
 };

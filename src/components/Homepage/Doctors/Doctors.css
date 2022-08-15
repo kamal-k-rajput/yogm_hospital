@@ -41,10 +41,3 @@
     color: rgb(83, 81, 81);
     font-size: 22px;
 }
-
-@media screen and (min-width: 580px) and (max-width:720px) {
-    body {
-        /* background-color: red; */
-
-    }
-}

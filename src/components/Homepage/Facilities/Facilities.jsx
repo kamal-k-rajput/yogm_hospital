@@ -1,4 +1,5 @@
 import React from "react";
+import GoToTop from "../../others/MoveToTop";
 import { InPhotoText } from "../../ReUsableCode/InPhotoText";
 
 export const Facilities = () => {
@@ -11,6 +12,7 @@ export const Facilities = () => {
           link: "facilities",
         }}
       />
+      <GoToTop/>
     </div>
   );
 };

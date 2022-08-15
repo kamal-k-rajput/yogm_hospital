@@ -1,10 +1,11 @@
 import React from "react";
 import { InPhotoText } from "../../ReUsableCode/InPhotoText";
 import drYogeshImg from "../../../assets/doctorsImages/dryogesh.jpeg";
-import  drJiutImg from "../../../assets/doctorsImages/drjiut.jpeg";
+import drJiutImg from "../../../assets/doctorsImages/drjiut.jpeg";
 import drAjayImg from "../../../assets/doctorsImages/drajay.jpeg";
 import "./Doctors.css";
 import uniqid from "uniqid";
+import GoToTop from "../../others/MoveToTop";
 export const Doctors = () => {
   const doctors = [
     {
@@ -24,7 +25,7 @@ export const Doctors = () => {
     },
   ];
   return (
-    <div>
+    <div id="doctors">
       <InPhotoText
         props={{
           name: "Doctors",
@@ -48,6 +49,7 @@ export const Doctors = () => {
         })}
       </div>
       <h1>Paramedical Staff</h1>
+      <GoToTop/>
     </div>
   );
 };

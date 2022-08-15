@@ -1,4 +1,5 @@
 import React from "react";
+import GoToTop from "../../others/MoveToTop";
 import { InPhotoText } from "../../ReUsableCode/InPhotoText";
 
 export const Specialities = () => {
@@ -11,6 +12,7 @@ export const Specialities = () => {
           name: "Specialities",
         }}
       />
+      <GoToTop />
     </div>
   );
 };

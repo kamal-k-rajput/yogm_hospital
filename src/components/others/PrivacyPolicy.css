@@ -1,0 +1,43 @@
+.privacy-outer-container {
+    width: 100%;
+    padding: 60px;
+    background-color: rgb(186, 250, 250) !important;
+    border: 2px solid grey;
+
+}
+
+.privacy-inner-container {
+    border: 2px solid grey;
+    background-color: white;
+    text-align: left;
+    padding: 10px;
+    border-radius: 15px;
+    ;
+}
+
+.privacy-outer-container>h2 {
+    text-decoration: underline;
+    ;
+}
+
+@media screen and (max-width:720px) {
+    .privacy-outer-container {
+        padding: 40px 20px;
+    }
+
+    .privacy-inner-container {
+        text-align: justify;
+
+    }
+}
+
+@media screen and (max-width:480px) {
+    .privacy-outer-container {
+        padding: 40px 10px;
+    }
+
+    .privacy-inner-container {
+        text-align: justify;
+
+    }
+}

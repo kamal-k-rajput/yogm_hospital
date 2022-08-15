@@ -12,7 +12,10 @@ import { Gallery } from "./components/Homepage/Gallery/Gallery";
 import { LogIn } from "./components/Admin/LogIn";
 import { Management } from "./components/Homepage/Management/Management";
 import { Specialities } from "./components/Homepage/Specialities/Specialities";
+
 import "./App.css";
+import { PrivacyPolicy } from "./components/others/PrivacyPolicy";
+import { RefundPolicy } from "./components/others/RefundPolicy";
 function App() {
   return (
     <div className="App">
@@ -28,7 +31,9 @@ function App() {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/admin" element={<LogIn />} />
           <Route path="/management" element={<Management />} />
-          <Route path="specialities" element={<Specialities />} />
+          <Route path="/specialities" element={<Specialities />} />
+          <Route path="/privacypolicy" element={<PrivacyPolicy />}></Route>
+          <Route path="/refundpolicy" element={<RefundPolicy />}></Route>
         </Routes>
         <Footer />
       </BrowserRouter>
