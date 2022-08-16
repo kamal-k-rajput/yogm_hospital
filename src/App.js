@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
+import { Helmet } from "react-helmet";
 import { Header } from "./components/Header/Header";
 import { Appointment } from "./components/Homepage/Appointment/Appointment";
 import { Homepage } from "./components/Homepage/Homepage";
@@ -36,6 +36,16 @@ function App() {
           <Route path="/refundpolicy" element={<RefundPolicy />}></Route>
         </Routes>
         <Footer />
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>Yogm Hospital</title>
+          <meta
+            name="description"
+            content="Yogm group of hospitals provides one of best healthcare services in india. We provide services OPD/IPD,
+           Emergency Service, Regular health checkups, Supportive services, Consultaion and Diagnostic procedure."
+          />
+          <link rel="canonical" href="https://yogmgroup.com" />
+        </Helmet>
       </BrowserRouter>
     </div>
   );
