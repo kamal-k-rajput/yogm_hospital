@@ -44,7 +44,7 @@ function App() {
             content="Yogm group of hospitals provides one of best healthcare services in india. We provide services OPD/IPD,
            Emergency Service, Regular health checkups, Supportive services, Consultaion and Diagnostic procedure."
           />
-          <link rel="canonical" href="https://yogmgroup.com" />
+          <link rel="canonical" href="https://www.yogmgroup.com" />
         </Helmet>
       </BrowserRouter>
     </div>
