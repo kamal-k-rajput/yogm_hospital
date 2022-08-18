@@ -8,7 +8,7 @@ import { Contact } from "./components/Homepage/Contact/Contact";
 import { Doctors } from "./components/Homepage/Doctors/Doctors";
 import { Facilities } from "./components/Homepage/Facilities/Facilities";
 import { Gallery } from "./components/Homepage/Gallery/Gallery";
-import { LogIn } from "./components/Admin/LogIn";
+import { AdminLogIn } from "./components/Admin/AdminLogIn";
 import { Management } from "./components/Homepage/Management/Management";
 import { Specialities } from "./components/Homepage/Specialities/Specialities";
 
@@ -16,6 +16,10 @@ import "./App.css";
 import { PrivacyPolicy } from "./components/others/PrivacyPolicy";
 import { RefundPolicy } from "./components/others/RefundPolicy";
 import { AppointmentForm } from "./components/Layout/AppointmentForm";
+<style>
+  @import
+  url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Noto+Serif+JP:wght@200&display=swap');
+</style>;
 function App() {
   return (
     <div className="App">
@@ -28,7 +32,7 @@ function App() {
           <Route path="/doctors" element={<Doctors />} />
           <Route path="/facilities" element={<Facilities />} />
           <Route path="/gallery" element={<Gallery />} />
-          <Route path="/admin" element={<LogIn />} />
+          <Route path="/adminlogin" element={<AdminLogIn />} />
           <Route path="/management" element={<Management />} />
           <Route path="/specialities" element={<Specialities />} />
           <Route path="/privacypolicy" element={<PrivacyPolicy />}></Route>
@@ -36,10 +40,6 @@ function App() {
           <Route path="/appointment" element={<AppointmentForm />}></Route>
         </Routes>
         <Footer />
-
-          
-         
-
       </BrowserRouter>
     </div>
   );

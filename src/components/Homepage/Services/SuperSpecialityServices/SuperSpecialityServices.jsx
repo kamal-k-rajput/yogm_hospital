@@ -48,7 +48,11 @@ export const SuperSpecialityServices = () => {
           return (
             <article className="speciality-service" key={uniqid()}>
               <div className="speciality-icon">
-                <img src={el.img_link} alt="medical equipment" />
+                <img
+                  src={el.img_link}
+                  alt="medical equipment"
+                  title={"medical equipment"}
+                />
               </div>
               <div className="speciality-content">
                 <h3>{el.heading}</h3>

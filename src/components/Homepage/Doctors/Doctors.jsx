@@ -5,6 +5,7 @@ import drJiutImg from "../../../assets/doctorsImages/drjiut.jpeg";
 import drAjayImg from "../../../assets/doctorsImages/drajay.jpeg";
 import "./Doctors.css";
 import uniqid from "uniqid";
+import { Helmet } from "react-helmet-async";
 import GoToTop from "../../others/MoveToTop";
 export const Doctors = () => {
   const doctors = [
@@ -26,6 +27,11 @@ export const Doctors = () => {
   ];
   return (
     <div id="doctors">
+      <Helmet>
+        <title>Doctors </title>
+        <meta name="description" content="Meet our doctors."></meta>
+        <link rel="canonical" href="doctors"></link>
+      </Helmet>
       <InPhotoText
         props={{
           name: "Doctors",
@@ -41,7 +47,7 @@ export const Doctors = () => {
         {doctors.map((doctor) => {
           return (
             <div className="doctors-details" key={uniqid()}>
-              <img src={doctor.img} alt={doctor.name} />
+              <img src={doctor.img} alt={doctor.name} title={doctor.name} />
               <p className="doctors-name">{doctor.name}</p>
               <p className="doctors-degree">{doctor.degree}</p>
             </div>
@@ -49,7 +55,7 @@ export const Doctors = () => {
         })}
       </div>
       <h1>Paramedical Staff</h1>
-      <GoToTop/>
+      <GoToTop />
     </div>
   );
 };

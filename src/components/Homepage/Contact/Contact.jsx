@@ -1,12 +1,20 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import GoToTop from "../../others/MoveToTop";
 import "./Contact.css";
 import { InPhotoText } from "../../ReUsableCode/InPhotoText";
 import Map from "./Map";
+import {Helmet} from "react-helmet-async"
 export const Contact = () => {
   return (
     <div>
+      <Helmet>
+        <title>Contact Us</title>
+        <meta
+          name="description"
+          content="Contact to our hospital and book an appointment."
+        ></meta>
+        <link rel="canonical" href="contact"></link>
+      </Helmet>
       <InPhotoText
         props={{
           name: "Contact Us",

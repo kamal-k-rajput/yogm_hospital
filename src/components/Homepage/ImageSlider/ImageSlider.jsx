@@ -21,19 +21,39 @@ export const ImageSlider = () => {
         className="presentation-mode"
       >
         <div>
-          <img src={one} alt="hoempageImage" className="hm-slider-img" />
+          <img
+            src={one}
+            alt="hoempageImage"
+            className="hm-slider-img"
+            title="yogm hospital"
+          />
           <p className="legend">On Main road with lot of parking space</p>
         </div>
         <div>
-          <img src={two} alt="hoempageImage" className="hm-slider-img" />
+          <img
+            src={two}
+            alt="hoempageImage"
+            className="hm-slider-img"
+            title="yogm hospital"
+          />
           <p className="legend">Easily Assesible</p>
         </div>
         <div>
-          <img src={three} alt="hoempageImage" className="hm-slider-img" />
+          <img
+            src={three}
+            alt="hoempageImage"
+            className="hm-slider-img"
+            title="yogm hospital"
+          />
           <p className="legend">Large Waiting Area</p>
         </div>
         <div>
-          <img src={four} alt="hoempageImage" className="hm-slider-img" />
+          <img
+            src={four}
+            alt="hoempageImage"
+            className="hm-slider-img"
+            title="yogm hospital"
+          />
           <p className="legend">Reception</p>
         </div>
       </Carousel>

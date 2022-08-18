@@ -1,0 +1,23 @@
+.login-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 20px auto;
+    border: 2px solid black;
+    width: 30%;
+    padding: 3%;
+
+}
+
+.login-form-container>label {
+    margin: 20px;
+}
+
+@media screen and (max-width:600px) {
+    .login-form-container {
+        width: 90%;
+
+    }
+
+}

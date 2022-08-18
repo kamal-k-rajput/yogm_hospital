@@ -10,7 +10,14 @@ export const PictureGallery = () => {
   return (
     <div className="picture-gallery-container">
       {dataPictureGallery.map((el) => {
-        return <img src={el} alt="yogm hospital images" key={uniqid()} />;
+        return (
+          <img
+            src={el}
+            alt="yogm hospital images"
+            key={uniqid()}
+            title={"yogm hospital"}
+          />
+        );
       })}
     </div>
   );

@@ -12,13 +12,13 @@ export const NavbarLinks = () => {
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Container>
           <Navbar.Brand href="/">
-            <img src={logo} alt="logo" className="navbar-logo" />
+            <img src={logo} alt="logo" className="navbar-logo" title={"logo"} />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto"></Nav>
             <Nav>
-              <Nav.Link href="appointment">Appointment</Nav.Link>
+              {/* <Nav.Link href="appointment">Appointment</Nav.Link> */}
 
               <Nav.Link href="doctors">Doctors</Nav.Link>
               <Nav.Link href="facilities">Facilities</Nav.Link>
