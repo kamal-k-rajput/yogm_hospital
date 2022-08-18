@@ -7,9 +7,12 @@
 
 # testing
 /coverage
+src/index.js
+client.js
 
 # production
 /build
+
 
 # misc
 .DS_Store

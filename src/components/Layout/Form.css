@@ -1,0 +1,93 @@
+.form-container {
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0px 0px 8px 3px rgba(209, 211, 230, 1);
+}
+
+
+
+.form-container>form>div>input,
+select {
+    margin: 10px 10px;
+    padding: 5px;
+    height: 35px;
+    width: 200px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.form-container>form>div>textarea {
+    box-sizing: border-box;
+    /* min-width: 35%; */
+    width: 35%;
+    overflow: hidden;
+}
+
+.form-container>form>div>input:hover,
+select:hover {
+    box-shadow: 0px 0px 8px 3px rgba(145, 152, 230, 0.64);
+}
+
+
+
+.submit-button {
+    margin: 10px 0;
+    background-color: rgb(64, 114, 222);
+    color: white;
+    padding: 5px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    border: 1px solid white;
+}
+
+.submit-button:hover {
+    border: 1px solid grey;
+    margin: 10px 0;
+    background-color: white;
+    color: rgb(64, 114, 222);
+    padding: 5px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    transition: all .8s ease;
+}
+
+@media screen and (max-width:720px) {
+    textarea {
+        max-width: 65%;
+        min-width: 65%;
+    }
+}
+
+@media screen and (max-width:480px) {
+    textarea {
+        max-width: 100%;
+        min-width: 80%;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .form-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-container {
+        margin: 20px 10px;
+    }
+
+    .form-container>form>div>input,
+    select,
+    textarea {
+        margin: 10px 10px;
+        width: 80%;
+    }
+
+    .form-container>h2 {
+        font-size: 1.2rem;
+    }
+
+
+}
