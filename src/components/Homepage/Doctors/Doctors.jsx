@@ -3,6 +3,7 @@ import { InPhotoText } from "../../ReUsableCode/InPhotoText";
 import drYogeshImg from "../../../assets/doctorsImages/dryogesh.jpeg";
 import drJiutImg from "../../../assets/doctorsImages/drjiut.jpeg";
 import drAjayImg from "../../../assets/doctorsImages/drajay.jpeg";
+import drSaumyaImg from "../../../assets/doctorsImages/drsaumya.png";
 import "./Doctors.css";
 import uniqid from "uniqid";
 import { Helmet } from "react-helmet-async";
@@ -13,6 +14,11 @@ export const Doctors = () => {
       name: "Dr. Yogesh Rajput",
       degree: "M.B.B.S. Gen. Physician",
       img: drYogeshImg,
+    },
+    {
+      name: "Dr. Saumya Rajput",
+      degree: "M.B.B.S. M.D. Pathology",
+      img: drSaumyaImg,
     },
     {
       name: "Dr. Jiut Yadav",
