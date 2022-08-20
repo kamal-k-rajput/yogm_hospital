@@ -1,8 +1,12 @@
-.speciality-services-container>article>div>img {
+.speciality-icon {
+    height: 100%;
+}
+
+.speciality-icon>img {
     width: 200px;
-    /* height: 100%; */
+    height: 100%;
     /* overflow: hidden; */
-    border: 1px solid grey;
+    /* border: 10px solid grey; */
 
 }
 
@@ -23,6 +27,21 @@
     align-items: center;
 }
 
+.speciality-content>div>p {
+    text-align: justify;
+    padding: 10px;
+    /* border: 1px solid red; */
+
+}
+
+@media screen and (max-width:1268px) {
+    .speciality-services-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+}
+
 @media screen and (max-width:720px) {
     .speciality-services-container {
         grid-template-columns: repeat(2, 1fr);
@@ -31,6 +50,17 @@
 
     .speciality-service {
         flex-direction: column;
+    }
+
+    .speciality-icon {
+        width: 100%;
+        height: auto;
+
+    }
+
+    .speciality-icon>img {
+        width: 100%;
+        height: auto;
     }
 }
 

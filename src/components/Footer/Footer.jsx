@@ -31,8 +31,11 @@ export const Footer = () => {
         <p></p>
       </div>
       <div>
+        <Map props={{ height: "200px" }} />
+      </div>
+      <div>
         <h3 className="useful-links">Useful Links</h3>
-        <div className="display-flex-vertical align-left footer-links">
+        <div className="footer-vertical align-left footer-links">
           <Link to="contact">Contact</Link>
 
           <Link to="privacypolicy">Privacy Policy</Link>
@@ -42,7 +45,7 @@ export const Footer = () => {
       </div>
       <div>
         <h3>Quik Links</h3>
-        <div className="display-flex-vertical align-left footer-links">
+        <div className="footer-vertical align-left footer-links">
           <Link to="Specialities">Specialities</Link>
           <Link to="doctors">Doctors</Link>
           <Link to="Facilities"> Facilities</Link>
@@ -51,7 +54,7 @@ export const Footer = () => {
       </div>
       <div>
         <h3>Follow Us</h3>
-        <div className="display-flex-vertical align-left footer-links">
+        <div className="footer-vertical align-left footer-links social-icons">
           <div className="footer-social-link">
             <FaInstagram />
             <a href="https://www.instagram.com/yogmhospital/">instagram</a>
@@ -69,14 +72,6 @@ export const Footer = () => {
             <a href="https://www.facebook.com/yogmhospital">Facebook</a>
           </div>
         </div>
-      </div>
-
-      <div>
-        <Map props={{ height: "200px" }} />
-        <p style={{ color: "white" }}>
-          <FaGlobe />
-          <a href="https://www.kamalkishor.in">Contact developer</a>
-        </p>
       </div>
     </footer>
   );

@@ -8,10 +8,6 @@
   font-family: 'Noto Serif JP', serif;
 }
 
-a {
-  text-decoration: none !important;
-}
-
 .display-flex-vertical {
   display: flex;
   flex-direction: column;
@@ -30,6 +26,6 @@ a {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
   color: white;
 }

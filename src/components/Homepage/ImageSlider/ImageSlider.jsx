@@ -3,6 +3,7 @@ import one from "../../../assets/homepageImages/one.jpg";
 import two from "../../../assets/homepageImages/two.jpg";
 import three from "../../../assets/homepageImages/three.jpg";
 import four from "../../../assets/homepageImages/four.jpg";
+import aug1 from "../../../assets/galleryImages/aug1.jpg";
 import "./ImageSlider.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
@@ -55,6 +56,15 @@ export const ImageSlider = () => {
             title="yogm hospital"
           />
           <p className="legend">Reception</p>
+        </div>
+        <div>
+          <img
+            src={aug1}
+            alt="hoempageImage"
+            className="hm-slider-img"
+            title="yogm hospital "
+          />
+          <p className="legend">Yogm hospital 15th aug. celebration.</p>
         </div>
       </Carousel>
     </div>

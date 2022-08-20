@@ -16,6 +16,7 @@ import "./App.css";
 import { PrivacyPolicy } from "./components/others/PrivacyPolicy";
 import { RefundPolicy } from "./components/others/RefundPolicy";
 import { AppointmentForm } from "./components/Layout/AppointmentForm";
+import { DevInfo } from "./components/others/DevInfo";
 <style>
   @import
   url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Noto+Serif+JP:wght@200&display=swap');
@@ -40,6 +41,7 @@ function App() {
           <Route path="/appointment" element={<AppointmentForm />}></Route>
         </Routes>
         <Footer />
+        <DevInfo />
       </BrowserRouter>
     </div>
   );
