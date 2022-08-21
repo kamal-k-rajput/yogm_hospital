@@ -17,6 +17,8 @@ import { PrivacyPolicy } from "./components/others/PrivacyPolicy";
 import { RefundPolicy } from "./components/others/RefundPolicy";
 import { AppointmentForm } from "./components/Layout/AppointmentForm";
 import { DevInfo } from "./components/others/DevInfo";
+import { Dashboard } from "./components/Reception/Dashboard";
+
 <style>
   @import
   url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Noto+Serif+JP:wght@200&display=swap');
@@ -39,6 +41,7 @@ function App() {
           <Route path="/privacypolicy" element={<PrivacyPolicy />}></Route>
           <Route path="/refundpolicy" element={<RefundPolicy />}></Route>
           <Route path="/appointment" element={<AppointmentForm />}></Route>
+          <Route path="/dashboard" element={<Dashboard />} />
         </Routes>
         <Footer />
         <DevInfo />

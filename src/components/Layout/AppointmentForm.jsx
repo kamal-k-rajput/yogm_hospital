@@ -2,27 +2,53 @@ import React, { useState } from "react";
 import "./Form.css";
 import { Helmet } from "react-helmet-async";
 import GoToTop from "../others/MoveToTop";
+const axios = require("axios").default;
+
 export const AppointmentForm = () => {
   const [formData, setFormData] = useState({
     firstName: "",
-    lastName: "",
-    email: "",
-    number: "",
+    lastName: null,
+    email: null,
+    mobileNumber: "",
     age: "",
     gender: "",
-    address: "",
+    address: null,
+    pincode: null,
     appointmentdate: "",
-    description: "",
+    description: null,
   });
+  const body = formData;
   const handleInputChange = (e) => {
     e.preventDefault();
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
     console.log(formData);
   };
+
   function submitForm(e) {
     e.preventDefault();
+    console.log(formData);
+    axios
+      .post("http://localhost:5050/appointment", { ...formData })
+      .then(function (response) {
+        console.log(response);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+    // fetch("http://localhost:5050/appointment", {
+    //   method: "POST",
+    //   mode: "no-cors",
+    //   headers: { "Content-Type": "application/json" },
+    //   body: JSON.stringify(formData),
+    // })
+    //   .then((response) => response.json())
+    //   .then((data) => {
+    //     console.log(data);
+    //   });
+    // console.log(formData);
   }
+
   return (
     <>
       <Helmet>
@@ -32,7 +58,7 @@ export const AppointmentForm = () => {
       </Helmet>
       <div className="form-container">
         <h2>Book Online Appointment</h2>
-        <form action={submitForm}>
+        <form onSubmit={submitForm}>
           <div className="form-row">
             <input
               type="text"
@@ -86,6 +112,7 @@ export const AppointmentForm = () => {
               id=""
               onChange={handleInputChange}
               required={true}
+              placeholder="Appointment Date"
             />
             <input
               type="text"
@@ -93,6 +120,14 @@ export const AppointmentForm = () => {
               id="address"
               onChange={handleInputChange}
               placeholder="Address(optional)"
+            />
+          </div>
+          <div>
+            <input
+              type="number"
+              name="pincode"
+              placeholder="Pincode"
+              onChange={handleInputChange}
             />
           </div>
           <div className="form-row">

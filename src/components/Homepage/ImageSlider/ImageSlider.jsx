@@ -15,11 +15,6 @@ export const ImageSlider = () => {
         autoPlay={true}
         dynamicHeight={true}
         infiniteLoop={true}
-        interval={2000}
-        animationHandler="fade"
-        stopOnHover={false}
-        transitionTime={1500}
-        className="presentation-mode"
       >
         <div>
           <img

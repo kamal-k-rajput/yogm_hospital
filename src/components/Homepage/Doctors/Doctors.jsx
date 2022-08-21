@@ -1,9 +1,9 @@
 import React from "react";
 import { InPhotoText } from "../../ReUsableCode/InPhotoText";
-import drYogeshImg from "../../../assets/doctorsImages/dryogesh.jpeg";
+import drYogeshImg from "../../../assets/doctorsImages/dryogesh2.jpg";
 import drJiutImg from "../../../assets/doctorsImages/drjiut.jpeg";
 import drAjayImg from "../../../assets/doctorsImages/drajay.jpeg";
-import drSaumyaImg from "../../../assets/doctorsImages/drsaumya.png";
+import drSaumyaImg from "../../../assets/doctorsImages/drsaumya2.jpg";
 import "./Doctors.css";
 import uniqid from "uniqid";
 import { Helmet } from "react-helmet-async";
