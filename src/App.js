@@ -1,6 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Header } from "./components/Header/Header";
-
 import { Homepage } from "./components/Homepage/Homepage";
 import { NavbarLinks } from "./components/Header/Navbar/NavbarLinks";
 import { Footer } from "./components/Footer/Footer";
@@ -19,10 +18,7 @@ import { AppointmentForm } from "./components/Layout/AppointmentForm";
 import { DevInfo } from "./components/others/DevInfo";
 import { Dashboard } from "./components/Reception/Dashboard";
 
-<style>
-  @import
-  url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Noto+Serif+JP:wght@200&display=swap');
-</style>;
+
 function App() {
   return (
     <div className="App">

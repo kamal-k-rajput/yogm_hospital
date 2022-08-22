@@ -6,7 +6,6 @@ import {
   FaInstagram,
   FaTwitter,
   FaLinkedin,
-  FaGlobe,
   FaPhoneAlt,
 } from "react-icons/fa";
 import { MdMailOutline } from "react-icons/md";
