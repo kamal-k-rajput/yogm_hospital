@@ -5,6 +5,7 @@ import dispensary from "../../../../assets/dispensary/dispensary.jpg";
 import privateward from "../../../../assets/wards/privateWard/privateward.jpg";
 import generalward from "../../../../assets/wards/GeneralWard/generalward.jpg";
 import cctv from "../../../../assets/wards/cctv.jpg";
+import drSaumyaRajput from "../../../../assets/doctorsImages/drsaumyarajput.jpg";
 export const SuperSpecialityServices = () => {
   const data = [
     {
@@ -13,6 +14,12 @@ export const SuperSpecialityServices = () => {
         "24×7 support of fully equipped Pathology services all time oxygen facility with ECG .",
       img_link:
         "https://images.unsplash.com/photo-1513224502586-d1e602410265?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1931&q=80",
+    },
+    {
+      img_link: drSaumyaRajput,
+      heading: "Pathology",
+      details:
+        "A Laboratory for the biological, microbiological,  haematological,  pathological or other examination of materials derived from the human body for the purpose of providing information for the diagnosis, management, prevention and treatment of disease.",
     },
     {
       heading: "Private ward available",

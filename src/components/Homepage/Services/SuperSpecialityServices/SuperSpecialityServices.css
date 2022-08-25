@@ -30,6 +30,8 @@
 .speciality-content>div>p {
     text-align: justify;
     padding: 10px;
+    overflow-y: scroll;
+    height: 150px;
     /* border: 1px solid red; */
 
 }
@@ -54,23 +56,31 @@
 
     .speciality-icon {
         width: 100%;
-        height: auto;
+        height: 100%;
+
+    }
+
+    .speciality-content>div>p {
+        height: 120px;
 
     }
 
     .speciality-icon>img {
         width: 100%;
-        height: auto;
+        height: 100%;
     }
 }
 
 @media screen and (max-width:480px) {
     .speciality-services-container {
         grid-template-columns: repeat(1, 1fr);
-
     }
 
     .speciality-service {
         flex-direction: column;
+    }
+
+    .speciality-content>div>p {
+        height: 100px;
     }
 }

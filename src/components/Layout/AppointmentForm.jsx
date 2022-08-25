@@ -83,7 +83,7 @@ export const AppointmentForm = () => {
               required={true}
             />
             <input
-              type="number"
+              inputMode="numeric"
               placeholder="What App No."
               name="number"
               onChange={handleInputChange}
@@ -124,7 +124,7 @@ export const AppointmentForm = () => {
           </div>
           <div>
             <input
-              type="number"
+              inputMode="numeric"
               name="pincode"
               placeholder="Pincode"
               onChange={handleInputChange}

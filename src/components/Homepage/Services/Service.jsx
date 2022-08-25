@@ -7,6 +7,7 @@ export const Service = ({ data }) => {
         src={data.el.img_link.small}
         title={data.el.heading}
         alt={data.el.discriptions}
+        loading="lazy"
       />
       <h3>{data.el.heading}</h3>
       <p>{data.el.discriptions}</p>
