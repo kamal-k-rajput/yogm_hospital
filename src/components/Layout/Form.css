@@ -5,6 +5,11 @@
     box-shadow: 0px 0px 8px 3px rgba(209, 211, 230, 1);
 }
 
+.response-api {
+    height: 30px;
+    color: var(--res-color, orange)
+}
+
 .form-container>form>div>input,
 select {
     margin: 10px 10px;

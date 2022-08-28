@@ -17,7 +17,7 @@ import { RefundPolicy } from "./components/others/RefundPolicy";
 import { AppointmentForm } from "./components/Layout/AppointmentForm";
 import { DevInfo } from "./components/others/DevInfo";
 import { Dashboard } from "./components/Reception/Dashboard";
-
+import { ButtonAppointment } from "./components/Homepage/Appointment/ButtonAppointment";
 
 function App() {
   return (
@@ -25,6 +25,7 @@ function App() {
       <BrowserRouter>
         <Header />
         <NavbarLinks />
+        <ButtonAppointment />
         <Routes>
           <Route path="/" element={<Homepage />}></Route>
           <Route path="/contact" element={<Contact />} />

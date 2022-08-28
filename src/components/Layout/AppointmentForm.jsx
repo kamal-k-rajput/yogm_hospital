@@ -3,7 +3,6 @@ import "./Form.css";
 import { Helmet } from "react-helmet-async";
 import GoToTop from "../others/MoveToTop";
 const axios = require("axios").default;
-
 export const AppointmentForm = () => {
   const [formData, setFormData] = useState({
     firstName: "",
@@ -17,17 +16,26 @@ export const AppointmentForm = () => {
     appointmentdate: "",
     description: null,
   });
-  const body = formData;
+
   const handleInputChange = (e) => {
     e.preventDefault();
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
-    console.log(formData);
   };
 
   function submitForm(e) {
     e.preventDefault();
-    console.log(formData);
+
+    if (formData.pincode.length !== 6) {
+      return alert("pin code is not correct");
+    }
+    if (
+      formData.mobileNumber.match(/^(\+\d{1,3}[- ]?)?\d{10}$/) &&
+      !formData.mobileNumber.match(/0{5,}/)
+    ) {
+      return alert("mobile number not correct");
+    }
+
     axios
       .post("http://localhost:5050/appointment", { ...formData })
       .then(function (response) {
@@ -58,6 +66,7 @@ export const AppointmentForm = () => {
       </Helmet>
       <div className="form-container">
         <h2>Book Online Appointment</h2>
+        <div className="response-api"></div>
         <form onSubmit={submitForm}>
           <div className="form-row">
             <input

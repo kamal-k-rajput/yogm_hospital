@@ -1,6 +1,7 @@
 import React from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
+import { FaPhoneAlt } from "react-icons/fa";
 export const Header = () => {
   return (
     <div className="header-container">
@@ -9,8 +10,18 @@ export const Header = () => {
       </div>
 
       <div>
-        <span>+919170597957</span>
-        <span>+919634946398</span>
+        <span>
+          <a href="tel:9170597957">MAKE AN APPOINTMENT CALL</a>
+        </span>
+        <span>
+          <FaPhoneAlt />
+          <a href="tel:9170597957">9170597957</a>
+        </span>
+        <span>
+          <FaPhoneAlt />
+          <a href="tel:9170597957">9634946398</a>
+        </span>
+
         {/* <span>
           <a href="mailto: yogmhospital22@gmail.com">
             yogmhospital22@gmail.com

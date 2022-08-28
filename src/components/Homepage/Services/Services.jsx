@@ -15,9 +15,9 @@ export const Services = () => {
         small: oxygen_small,
         medium: oxygen_medium,
       },
-      heading: "24x7 Oxygen facility available",
+      heading: "Emergency Services",
       discriptions:
-        "Intensive care units (ICU) and high dependency units (HDU) are specialist wards providing intensive care (treatment and monitoring) for people who are in a critically ill or unstable condition.",
+        "We porvide 24x7 Oxygen, one staff nurse for critical patients. All time doctors availability.",
     },
     {
       img_link: {

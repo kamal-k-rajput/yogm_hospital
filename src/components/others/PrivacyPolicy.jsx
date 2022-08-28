@@ -1,4 +1,5 @@
 import React from "react";
+import GoToTop from "./MoveToTop";
 import "./PrivacyPolicy.css";
 
 export const PrivacyPolicy = () => {
@@ -61,6 +62,7 @@ export const PrivacyPolicy = () => {
           </p>
         </article>
       </div>
+      <GoToTop />
     </>
   );
 };

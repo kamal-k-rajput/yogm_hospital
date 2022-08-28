@@ -2,7 +2,12 @@ import React from "react";
 import GoToTop from "../../others/MoveToTop";
 import { InPhotoText } from "../../ReUsableCode/InPhotoText";
 import { Helmet } from "react-helmet-async";
+import { useSelector } from "react-redux";
 export const Facilities = () => {
+  const data = useSelector((store) => {
+    return store.data;
+  });
+  console.log(data);
   return (
     <>
       <Helmet>

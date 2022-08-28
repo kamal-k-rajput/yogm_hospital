@@ -18,8 +18,14 @@ export const Footer = () => {
         <p>Achhalda Road Bidhuna</p>
         <p>Auraiya Uttar Pradesh 206243</p>
         <p>
-          <FaPhoneAlt />
-          9170597957, 9634946398
+          <span>
+            <FaPhoneAlt style={{ marginRight: "5px", marginLeft: "10px" }} />
+            <a href="tel:9170597957">9170597957</a>
+          </span>
+          <span>
+            <FaPhoneAlt style={{ marginRight: "5px", marginLeft: "10px" }} />
+            <a href="tel:9170597957">9634946398</a>
+          </span>
         </p>
         <p>
           <MdMailOutline />
@@ -27,7 +33,6 @@ export const Footer = () => {
             yogmhospital22@gmail.com
           </a>
         </p>
-        <p></p>
       </div>
       <div>
         <Map props={{ height: "200px" }} />
@@ -56,7 +61,7 @@ export const Footer = () => {
         <div className="footer-vertical align-left footer-links social-icons">
           <div className="footer-social-link">
             <FaInstagram />
-            <a href="https://www.instagram.com/yogmhospital/">instagram</a>
+            <a href="https://www.instagram.com/yogmhospital/">Instagram</a>
           </div>
           <div className="footer-social-link">
             <FaLinkedin />
