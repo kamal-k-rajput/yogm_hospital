@@ -40,6 +40,7 @@ export const Footer = () => {
       <div>
         <h3 className="useful-links">Useful Links</h3>
         <div className="footer-vertical align-left footer-links">
+          <Link to="feedback">Feedback</Link>
           <Link to="contact">Contact</Link>
 
           <Link to="privacypolicy">Privacy Policy</Link>

@@ -18,6 +18,7 @@ import { AppointmentForm } from "./components/Layout/AppointmentForm";
 import { DevInfo } from "./components/others/DevInfo";
 import { Dashboard } from "./components/Reception/Dashboard";
 import { ButtonAppointment } from "./components/Homepage/Appointment/ButtonAppointment";
+import { FeedbackForm } from "./components/Feedback/FeedbackForm";
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
           <Route path="/refundpolicy" element={<RefundPolicy />}></Route>
           <Route path="/appointment" element={<AppointmentForm />}></Route>
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/feedback" element={<FeedbackForm />} />
         </Routes>
         <Footer />
         <DevInfo />

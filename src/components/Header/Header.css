@@ -13,6 +13,10 @@
     font-size: 1.2rem;
 }
 
+.react-icons {
+    margin: 0 2px;
+}
+
 .hospital-open-time {
     color: white;
 }
@@ -33,12 +37,10 @@
 .header-container>div:nth-child(2)>span>a {
     color: white !important;
     text-decoration: none;
-    margin-left:5px;
 }
 
-@media screen and (max-width:680px) {
+@media screen and (max-width:720px) {
     .header-container {
-        /* background-color: hotpink; */
         font-size: 0.9rem;
         flex-direction: column;
         height: 50px;
@@ -46,6 +48,15 @@
     }
 
     .header-container>div:nth-child(1) {
-        padding-bottom: 10px;
+        padding-bottom: 5px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .header-container {
+        font-size: 0.7rem;
+        flex-direction: column;
+        height: 50px;
+        justify-content: center;
     }
 }

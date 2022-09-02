@@ -4,6 +4,7 @@ import { ImageSlider } from "./ImageSlider/ImageSlider";
 import { Services } from "./Services/Services";
 import { SuperSpecialityServices } from "./Services/SuperSpecialityServices/SuperSpecialityServices";
 import { Helmet } from "react-helmet-async";
+import GoToTop from "../others/MoveToTop";
 export const Homepage = () => {
   return (
     <div>
@@ -20,6 +21,7 @@ export const Homepage = () => {
       </h1>
       <Services />
       <SuperSpecialityServices />
+      <GoToTop />
     </div>
   );
 };
