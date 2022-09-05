@@ -1,15 +1,13 @@
 import React from "react";
 import { InPhotoText } from "../../ReUsableCode/InPhotoText";
 import { Helmet } from "react-helmet-async";
+import "./Management.css";
 export const Management = () => {
   return (
-    <div>
+    <>
       <Helmet>
         <title>Management </title>
-        <meta
-          name="description"
-          content="Check our management."
-        ></meta>
+        <meta name="description" content="Check our management."></meta>
         <link rel="canonical" href="management"></link>
       </Helmet>
       <InPhotoText
@@ -19,7 +17,8 @@ export const Management = () => {
           heading: "MANAGEMENT",
         }}
       />
-      This is management page
-    </div>
+      <h2>Our Management</h2>
+
+    </>
   );
 };

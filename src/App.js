@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import { Header } from "./components/Header/Header";
 import { Homepage } from "./components/Homepage/Homepage";
 import { NavbarLinks } from "./components/Header/Navbar/NavbarLinks";
@@ -10,15 +10,17 @@ import { Gallery } from "./components/Homepage/Gallery/Gallery";
 import { AdminLogIn } from "./components/Admin/AdminLogIn";
 import { Management } from "./components/Homepage/Management/Management";
 import { Specialities } from "./components/Homepage/Specialities/Specialities";
-
 import "./App.css";
 import { PrivacyPolicy } from "./components/others/PrivacyPolicy";
 import { RefundPolicy } from "./components/others/RefundPolicy";
 import { AppointmentForm } from "./components/Layout/AppointmentForm";
 import { DevInfo } from "./components/others/DevInfo";
-import { Dashboard } from "./components/Reception/Dashboard";
+import { Dashboard } from "./components/Admin/Reception/ReceptionDashboard";
+
 import { ButtonAppointment } from "./components/Homepage/Appointment/ButtonAppointment";
 import { FeedbackForm } from "./components/Feedback/FeedbackForm";
+import { MasterAdminDashboard } from "./components/Admin/MasterAdmin/MasterAdminDashboard";
+import { PrivateRoute } from "./components/Admin/PrivateRoute";
 
 function App() {
   return (
@@ -28,7 +30,7 @@ function App() {
         <NavbarLinks />
         <ButtonAppointment />
         <Routes>
-          <Route path="/" element={<Homepage />}></Route>
+          <Route path="/" element={<Homepage />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/doctors" element={<Doctors />} />
           <Route path="/facilities" element={<Facilities />} />
@@ -41,6 +43,15 @@ function App() {
           <Route path="/appointment" element={<AppointmentForm />}></Route>
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/feedback" element={<FeedbackForm />} />
+          <Route path="/adminlogin" element={<AdminLogIn />} />
+          <Route
+            path="/admindashboard"
+            element={
+              <PrivateRoute>
+                <MasterAdminDashboard />
+              </PrivateRoute>
+            }
+          />
         </Routes>
         <Footer />
         <DevInfo />

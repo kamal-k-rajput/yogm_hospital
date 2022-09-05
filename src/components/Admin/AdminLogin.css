@@ -7,17 +7,35 @@
     border: 2px solid black;
     width: 30%;
     padding: 3%;
-
 }
 
 .login-form-container>label {
     margin: 20px;
 }
 
+.login-form-container>label {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form-container>input[type="submit"] {
+    background-color: #f4a00e;
+    color: black;
+    font-size: 22px;
+    border: 2px solid #0A58CA;
+    border-radius: 15px;
+    width: 200px;
+}
+
+.login-form-container>input[type="submit"]:hover {
+    background-color: rgb(255, 255, 255);
+    transition: ease .8s;
+    border: 2px solid black;
+    color: #0A58CA;
+}
+
 @media screen and (max-width:600px) {
     .login-form-container {
         width: 90%;
-
     }
-
 }

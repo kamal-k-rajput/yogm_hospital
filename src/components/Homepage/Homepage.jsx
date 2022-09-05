@@ -5,6 +5,7 @@ import { Services } from "./Services/Services";
 import { SuperSpecialityServices } from "./Services/SuperSpecialityServices/SuperSpecialityServices";
 import { Helmet } from "react-helmet-async";
 import GoToTop from "../others/MoveToTop";
+import { Notification } from "./Notification/Notification";
 export const Homepage = () => {
   return (
     <div>
@@ -19,6 +20,7 @@ export const Homepage = () => {
         their domain. */}
         Services that we provide to patients.
       </h1>
+      <Notification />
       <Services />
       <SuperSpecialityServices />
       <GoToTop />

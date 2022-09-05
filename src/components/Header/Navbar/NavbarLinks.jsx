@@ -27,6 +27,7 @@ export const NavbarLinks = () => {
               <Nav.Link href="gallery">Gallery</Nav.Link>
               <Nav.Link href="management">Management</Nav.Link>
               <Nav.Link href="contact">Contact</Nav.Link>
+              <Nav.Link href="adminlogin">Admin</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

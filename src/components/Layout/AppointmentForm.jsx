@@ -13,8 +13,6 @@ export const AppointmentForm = () => {
     gender: "",
     address: null,
     pincode: null,
-    appointmentdate: "",
-    description: null,
   });
   //
 
@@ -22,15 +20,15 @@ export const AppointmentForm = () => {
   const handleInputChange = (e) => {
     e.preventDefault();
     const { name, value } = e.target;
-    if (name === "appointmentdate") {
-      var selectedText = value;
-      var selectedDate = new Date(selectedText);
-      console.log("value", value.split("-"));
-      var now = new Date();
-      if (selectedDate < now) {
-        return alert("Date must be in the future");
-      }
-    }
+    // if (name === "appointmentdate") {
+    //   var selectedText = value;
+    //   var selectedDate = new Date(selectedText);
+    //   console.log("value", value.split("-"));
+    //   var now = new Date();
+    //   if (selectedDate < now) {
+    //     return alert("Date must be in the future");
+    //   }
+    // }
 
     setFormData({ ...formData, [name]: value });
   };
@@ -167,7 +165,7 @@ export const AppointmentForm = () => {
                 onChange={handleInputChange}
               />
             </label>
-            <label>
+            {/* <label>
               <div>Your Issue</div>
               <textarea
                 name="description"
@@ -175,7 +173,7 @@ export const AppointmentForm = () => {
                 onChange={handleInputChange}
                 placeholder="Describe Your Issue..."
               />
-            </label>
+            </label> */}
           </div>
           {/* <div className="form-row"></div> */}
           <input

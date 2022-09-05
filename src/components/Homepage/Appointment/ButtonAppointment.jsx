@@ -4,11 +4,8 @@ import "./ButtonAppointment.css";
 import { useSelector, useDispatch } from "react-redux";
 // import store from "../../../store/store";
 export const ButtonAppointment = () => {
-  const btn_status = useSelector((store) => {
-    return store.appointmentButton;
-  });
+  const btn_status = useSelector((store) => store.appointmentButton);
   const dispatch = useDispatch();
-  console.log(btn_status, "btn_status");
   return (
     <span
       style={{ display: btn_status }}
@@ -18,8 +15,6 @@ export const ButtonAppointment = () => {
           type: "appointment-btn-status",
           payload: "none",
         });
-        console.log("buttonclicked");
-        console.log(btn_status, "btn_status");
       }}
     >
       <Link to="/appointment" className="appointment-button">
