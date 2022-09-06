@@ -1,0 +1,43 @@
+.management-details>img {
+    width: 240px;
+    height: 300px;
+    display: block;
+    border: 1px solid rgb(56, 56, 56);
+}
+
+.management-details>img:hover {
+    transform: scale(1.1);
+    transition: 1.5s;
+}
+
+.management-details {
+    overflow: hidden;
+}
+
+.doctor-center-line {
+    margin: 20px auto;
+    font-weight: 550;
+    font-size: 1.45em;
+
+}
+
+.management-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+    border: 1px solid grey;
+    padding: 20px;
+}
+
+.management-name {
+    font-size: 24px;
+    color: red;
+    font-weight: 800;
+
+}
+
+.management-degree {
+    color: rgb(83, 81, 81);
+    font-size: 22px;
+}

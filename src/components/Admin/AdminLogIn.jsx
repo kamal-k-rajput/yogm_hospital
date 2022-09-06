@@ -40,7 +40,7 @@ export const AdminLogIn = () => {
       });
   }
   return (
-    <>
+    <div className="admin-login-component">
       <h1>Admin Panel </h1>
       {error && <p>{error.message}</p>}
       {moderator && <Navigate to="/admindashboard" replace={true} />}
@@ -67,6 +67,6 @@ export const AdminLogIn = () => {
         </label>
         <input type="submit" value="LOG IN" />
       </form>
-    </>
+    </div>
   );
 };

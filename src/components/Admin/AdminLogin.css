@@ -1,3 +1,11 @@
+.admin-login-component {
+    background-image: linear-gradient(120deg, #6400ff, rgba(125, 99, 226, 1), #1c18e0)
+}
+
+.admin-login-component>h1 {
+    color: white;
+}
+
 .login-form-container {
     display: flex;
     flex-direction: column;
@@ -7,7 +15,11 @@
     border: 2px solid black;
     width: 30%;
     padding: 3%;
+    background-color: white;
+    border-radius: 10px;
 }
+
+
 
 .login-form-container>label {
     margin: 20px;
