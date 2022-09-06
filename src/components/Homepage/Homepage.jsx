@@ -11,7 +11,10 @@ export const Homepage = () => {
     <div>
       <Helmet>
         <title>Yogm Hospital </title>
-        <meta name="description" content="Homepage of yogm hospital."></meta>
+        <meta
+          name="description"
+          content="Yogm hospital, Second home for patients, we provide world class health facilities. Our aim is healthy india fit india. Your health is our priority."
+        ></meta>
         <link rel="canonical" href="/"></link>
       </Helmet>
       <ImageSlider />
