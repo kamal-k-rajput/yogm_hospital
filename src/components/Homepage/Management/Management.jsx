@@ -10,7 +10,7 @@ import "./Management.css";
 export const Management = () => {
   const management = [
     {
-      name: "YashRaj Rajput",
+      name: "Yashraj Rajput",
       degree: "B.M.L.T.",
       img: yashrajImg,
       post: "C.E.O.",
