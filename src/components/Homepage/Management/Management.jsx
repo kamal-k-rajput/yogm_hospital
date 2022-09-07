@@ -16,6 +16,12 @@ export const Management = () => {
       post: "C.E.O.",
     },
     {
+      name: "Pratibha ",
+      degree: "Advocate",
+      img: pratibhaImg,
+      post: "Administrator",
+    },
+    {
       name: "Dr. Yogesh Rajput",
       degree: "M.B.B.S. Gen. Physician",
       img: dryogeshImg,

@@ -18,12 +18,9 @@ export const NavbarLinks = () => {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto"></Nav>
             <Nav>
-              {/* <Nav.Link href="appointment">Appointment</Nav.Link> */}
-
               <Nav.Link href="doctors">Doctors</Nav.Link>
               <Nav.Link href="facilities">Facilities</Nav.Link>
-
-              <Nav.Link href="specialities">Specialites</Nav.Link>
+              <Nav.Link href="specialities">Specialities</Nav.Link>
               <Nav.Link href="gallery">Gallery</Nav.Link>
               <Nav.Link href="management">Management</Nav.Link>
               <Nav.Link href="contact">Contact</Nav.Link>
