@@ -45,6 +45,9 @@ export const FeedbackForm = () => {
         </label>
         <input type="submit" value="Submit Feedback" />
       </form>
+      <a href="https://g.page/r/CZREN3QVLjCmEBM/review">
+        Write Review on Google
+      </a>
       <GoToTop />
     </div>
   );
