@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet-async";
 import yashrajImg from "../../../assets/management/yashraj.jpg";
 import harbhanImg from "../../../assets/doctorsImages/drjiut.jpeg";
 import pratibhaImg from "../../../assets/management/pratibha.png";
+import GoToTop from "../../others/MoveToTop";
 import dryogeshImg from "../../../assets/management/dryogesh.jpeg";
 import uniqid from "uniqid";
 import "./Management.css";
@@ -62,6 +63,20 @@ export const Management = () => {
           );
         })}
       </div>
+      {
+        <div>
+          <ins
+            class="adsbygoogle"
+            style={"display:block"}
+            data-ad-client="ca-pub-2960092495542092"
+            data-ad-slot="1489967335"
+            data-ad-format="auto"
+            data-full-width-responsive="true"
+          ></ins>
+          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+      }
+      <GoToTop />
     </>
   );
 };
