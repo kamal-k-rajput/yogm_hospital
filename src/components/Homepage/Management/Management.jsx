@@ -8,7 +8,6 @@ import GoToTop from "../../others/MoveToTop";
 import dryogeshImg from "../../../assets/management/dryogesh.jpeg";
 import uniqid from "uniqid";
 import "./Management.css";
-import { GoogleAdv } from "../../others/GoogleAdv";
 export const Management = () => {
   const management = [
     {

@@ -3,7 +3,8 @@ import React, { useEffect } from "react";
 export const GoogleAdv = () => {
   useEffect(() => {
     (window.adsbygoogle = window.adsbygoogle || []).push({});
-  }, []);
+  });
+
   return (
     <div>
       <ins
@@ -13,7 +14,7 @@ export const GoogleAdv = () => {
         data-ad-slot="1489967335"
         data-ad-format="auto"
         data-full-width-responsive="true"
-      ></ins>
+      />
     </div>
   );
 };
